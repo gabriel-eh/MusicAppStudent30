@@ -1,0 +1,40 @@
+<div class="page">
+    <div class="soungs-section">
+        <div class="soungs-section-header">
+            <mat-form-field class="filter-input" appearance="fill">
+                <mat-label>Clearable input</mat-label>
+                <input matInput type="text" [(ngModel)]="filter">
+                <button *ngIf="filter" matSuffix mat-icon-button aria-label="Clear" (click)="filter=''">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-form-field>
+        </div>
+        <mat-grid-list cols="4" >
+            <mat-grid-tile *ngFor="let soung of soungs">
+                <mat-card  class="soung-card">
+                    <img mat-card-image class="image-card" [src]="soung.album.cover_medium" alt="Photo of a Shiba Inu">
+                    <mat-card-title-group>
+                        <mat-card-title>{{soung.artist.name}}
+                        <h4>{{soung.title}}</h4></mat-card-title>
+                        <button mat-fab class="button-card" aria-label="Example icon button with a bookmark icon">
+                          <mat-icon>play_arrow</mat-icon>
+                        </button>
+                    </mat-card-title-group>
+                </mat-card>
+            </mat-grid-tile>
+          </mat-grid-list>
+    </div>
+    <div class="favorite-section">
+        <h1>{{userName}}</h1>        
+        <mat-card class="favorite-card">
+            <mat-card-title-group>
+                <mat-card-title>Shiba Inu</mat-card-title>
+                <mat-card-subtitle>Medium</mat-card-subtitle>
+                <img mat-card-md-image src="https://material.angular.io/assets/img/examples/shiba2.jpg">
+            </mat-card-title-group>
+            <mat-card-content>
+                {{"longText"}}
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

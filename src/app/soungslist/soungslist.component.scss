@@ -1,0 +1,42 @@
+
+.soungs-section {
+    padding-top: 50px;
+    min-height: 85vh;
+    background: linear-gradient(180deg, #3C162F 0%, #191528 100%);
+    width: 80%;
+    position: absolute;
+    padding: 15px;
+}
+.soungs-section-header {
+    text-align: center;
+}
+.filter-input {
+    border-radius: 20px;
+    color: #FFFFFF;
+}
+.favorite-section {
+    right: 0;
+    margin-top: 50px;
+    height: 100%;
+    float: right;
+    padding: 15px;
+    color: #FFFFFF !important;
+}
+.soung-card {
+    width: 300px;
+    margin-bottom: 8px;
+    background-color: #464c4f;
+    color: #FFFFFF !important;
+ }
+.favorite-card {
+    max-width: 200px;
+    margin-bottom: 8px;
+}
+.image-card {
+    height: 200px;
+    object-fit: cover
+}
+.button-card {
+    background-color: #06D6A0 !important;
+}
+//#191528 #3C162F #5C162E #7C162E #110E1B #002233 #FFFFFF #FFD166 #EF476F #06D6A0

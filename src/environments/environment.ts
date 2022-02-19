@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiPaths: {
+    chartList: "chart/0/tracks",
+    chart: "chart/0/tracks/:id",
+    album: "album/:id",
+    search: "search?q=eminem"
+  }
+
 };
 
 /*
